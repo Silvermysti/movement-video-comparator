@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# MediaPipe model
+pose_landmarker.task
+
+# Temporary files
+*.tmp
