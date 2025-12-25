@@ -1,10 +1,10 @@
-# 🎵 Dance Video Comparator
+# 🏃 Movement Video Comparator
 
 ## Overview
 
-The **Dance Video Comparator** is a professional-grade tool designed to compare two dance performance videos using human pose detection and joint-angle analysis. The application automatically aligns corresponding segments of the videos based on movement similarity and produces a synchronized, side-by-side comparison video with visual pose overlays.
+The **Movement Video Comparator** is a professional-grade tool designed to compare two movement or exercise videos using human pose detection and joint-angle analysis. The application automatically aligns corresponding segments of the videos based on movement similarity and produces a synchronized, side-by-side comparison video with visual pose overlays.
 
-This tool is well suited for choreography analysis, dance training, performance evaluation, and motion comparison research.
+This tool is well suited for exercise form analysis, sports technique comparison, physical therapy monitoring, and movement pattern research.
 
 ---
 
@@ -22,12 +22,12 @@ This tool is well suited for choreography analysis, dance training, performance 
 ### 📐 Angle-Based Motion Analysis
 
 * Extracts joint angles for arms, legs, torso, and shoulders.
-* Robust against differences in camera position and dancer scale.
+* Robust against differences in camera position and subject scale.
 
 ### 🎥 Video Processing
 
 * Standardizes videos to **30 FPS**
-* Optional horizontal mirroring for opposite-facing dancers
+* Optional horizontal mirroring for opposite-facing movements
 * Real-time pose landmark visualization
 
 ### 📺 Side-by-Side Comparison Output
@@ -65,8 +65,8 @@ All Python dependencies are listed in `requirements.txt`.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/dance-video-comparator.git
-cd dance-video-comparator
+git clone https://github.com/yourusername/movement-video-comparator.git
+cd movement-video-comparator
 ```
 
 ### 2️⃣ Install Python Dependencies
@@ -101,7 +101,7 @@ Place at least two video files (`.mp4`, `.avi`, `.mov`, `.mkv`) in the project d
 ### 2️⃣ Run the Application
 
 ```bash
-python dance_comparator.py
+python movement_comparator.py
 ```
 
 ### 3️⃣ Follow the Prompts
@@ -205,7 +205,7 @@ ffmpeg -version
 **Solutions:**
 
 * Improve lighting
-* Ensure dancer is fully visible
+* Ensure subject is fully visible
 * Lower detection confidence (e.g., `0.3`)
 
 ---
@@ -214,8 +214,8 @@ ffmpeg -version
 
 **Solutions:**
 
-* Enable mirroring if dancers face opposite directions
-* Ensure similar choreography
+* Enable mirroring if subjects face opposite directions
+* Ensure similar movements
 * Verify pose landmarks are detected correctly
 
 ---
@@ -223,7 +223,7 @@ ffmpeg -version
 ## 🚀 Performance Tips
 
 * Pre-convert videos to **720p**
-* Process **30–60 second** clips
+* Process **short clips** for movement comparison
 * Increase sampling gap for long videos
 * Close other CPU/GPU-intensive applications
 
